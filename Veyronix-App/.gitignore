@@ -1,0 +1,12 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+*.iml
+.idea/
+.DS_Store
+
+# Backend
+backend/node_modules/
+backend/data/*.sqlite
+backend/.env
