@@ -9,7 +9,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 
 class MainActivity : Activity() {
-    private val background = Color.rgb(17, 19, 29)
+    private val pageBackground = Color.rgb(17, 19, 29)
     private val surface = Color.rgb(29, 32, 47)
     private val purple = Color.rgb(116, 101, 245)
     private val muted = Color.rgb(164, 169, 191)
@@ -32,12 +32,12 @@ class MainActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        window.statusBarColor = background
-        window.navigationBarColor = background
+        window.statusBarColor = pageBackground
+        window.navigationBarColor = pageBackground
 
         val root = LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
-            setBackgroundColor(background)
+            setBackgroundColor(pageBackground)
             setPadding(dp(18), dp(24), dp(18), dp(16))
         }
 
